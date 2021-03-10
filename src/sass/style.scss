@@ -1,0 +1,31 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Manrope', sans-serif;
+    color: $main-color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1090px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+@import 'block/header.scss';
+@import 'block/main.scss';
+@import 'block/partners.scss';
+@import 'block/features.scss';
+@import 'block/title.scss';
+@import 'block/rewievs.scss';
+@import 'block/progress.scss';
+@import 'block/content.scss';
+@import 'block/fashion.scss';
+@import 'block/mobile.scss';
+@import 'block/footer.scss';
+@import 'block/store.scss';
+@import 'block/media.scss';
