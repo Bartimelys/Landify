@@ -1,12 +1,12 @@
 .partners{
     padding: 16px 0;
-    min-height: 142px;
     &__items{
         height: 108px;
         list-style: none;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__img{
         height: 28px;

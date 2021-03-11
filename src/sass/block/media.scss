@@ -59,30 +59,6 @@
             justify-content: space-around;
         }
     }
-    .title{
-        &_symbol{
-            &::before{
-                left: -50px;
-                top: -25px;
-                width: 75px;
-                height: 65px;
-            }
-        }
-    }
-    .phone{
-        &__store{
-            align-items:flex-end;
-        }
-    }
-}
-@media (max-width: 767px){
-    .phone{
-        &__store{
-            &_active{
-                margin-left: 56%;
-            }
-        }
-    }
     .reviews{
         &__wrapper{
             flex-wrap: wrap;
@@ -98,18 +74,86 @@
         }
     }
     .progress{
+        padding-top: 50px;
+        padding-bottom: 0;
+        &__subtitle{
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+    .content{
+        min-height: 350px;
+        padding: 0;
+        &__wrapper{
+            img{
+                width: 50%;   
+            }
+        }
+    }
+    .title{     
+        &_symbol{
+            &::before{
+                left: -50px;
+                top: -25px;
+                width: 75px;
+                height: 65px;
+            }
+        }
+    }
+    .mobile{
+        padding: 15px 0;
+        &__img{
+            display: none;
+        }
+        &__item{
+            flex-basis: auto;
+        }
+    }
+    .phone{
+        &_header{
+            align-items:flex-end;
+        }
+    }
+}
+@media (max-width: 767px){    
+    .main{
+        padding: 0;
+        &__title{
+            margin-top: 43px;
+            line-height: 68px;
+        }
+        &__btn{
+            width: 137px;
+            height: 40px;
+            font-size: 13px;
+            margin-left: 70px;
+        }
+        &__img{
+            width: 50%;
+        }
+    }
+
+    .progress{
         padding: 30px 0;
         &__wrapper{
             flex-direction: column;
         }
         &__subtitle{
-            text-align: center;
             margin-bottom: 15px;
         }
         &__info{
             &_wrap{
                 margin: 0 auto;
+                justify-content: flex-end;
             }
+        }
+        &__item{
+            flex-basis: 45%;
+        }
+    }
+    .reviews{
+        &__items{
+            margin-left: 0;
         }
     }
     .content{
@@ -123,23 +167,117 @@
             width: 100%;
             text-align: center;
         }
+        &__link{
+            text-align: center;
+        }
         &__img{
             margin-top: 15px;
         }
     }
-    .mobile{
-        padding: 15px 0;
-        &__img{
-            display: none;
-        }
-        &__item{
-            flex-basis: auto;
+    .fashion{
+        min-height: inherit;
+        &__wrapper{
+            flex-direction: column;
+        }       
+    }
+    .footer{
+        &__menu{
+            flex-wrap: wrap;
         }
     }
     .title{
         text-align: center;
+        font-size: 34px;
+        &_symbol{
+            &::before{
+                left: 39px;
+                top: -20px;
+                width: 47px;
+                height: 41px;
+            }
+        }
+    }
+    .phone{
+        &_header{
+            a{
+                width: 100%;
+            }
+            &_active{
+                flex-direction: column;
+            }
+        }
     }
 }
     
-//@media (max-width : 575px)
-//
+@media (max-width : 575px){
+    .header{
+        min-height: inherit;
+    }
+    .main{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+    .partners{
+        &__items{
+            flex-wrap: wrap;
+            li{
+                margin-right: 15px;
+
+            }
+        }
+    }
+    .reviews{
+        padding: 30px 0;
+        &__item{
+            width: 291px;
+        }
+        &__text{
+            font-size: 13px;
+            line-height: 26px;
+        }
+    }
+    .progress{
+        &__info{
+            &_wrap{
+                justify-content: inherit;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+    .content{
+        &__wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .fashion{
+        padding: 27px 0;
+        &__descr{
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    .phone{
+        &_header{
+            width: 204px;
+            &_active{
+                display: none;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .title{
+        font-size: 18px;
+    }
+
+}
+
